@@ -1,0 +1,51 @@
+case "new form"
+scenario
+I am a logged in user
+click on 'create form'
+shoud see form creating page
+fill 'name of form'
+select language of form
+select form type
+select type of elenemts showing
+select the uniqueness of respondents
+click on 'save and go to nex step' button
+should see editing page of your form
+
+case "viewing your forms"
+scenario
+I am a logged in user
+click on 'my forms' button
+should see page "my forms"
+should see all created forms
+
+case "editing form"
+scenario
+I am a logged in user
+click on 'my forms'
+select form whitch you want to edit
+select editing tab
+click on 'add question/element' button
+select 'one from many' in popup menu
+verify that radiobutton block has been added to the form
+click 'Save form'
+verify that changes have been saved
+
+case "publication of the form"
+scenario
+I am a logged in user
+click on 'my forms'
+select form whitch you want to edit
+select 'publication' tab
+verify that form havn't been published before
+button 'Start publication' must be active
+go to links tab and copy link to your form
+use anonymous user and try to visit a link for unpublished form
+shoud see message 'Unfortunately, this form is inaccessible! '
+
+case "open access to your form"
+I am a logged in user
+click on 'my forms'
+select form which you want to edit
+select 'publication' tab
+press 'Start publication' button
+verify that your form have been published
