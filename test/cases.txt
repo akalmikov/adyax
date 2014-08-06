@@ -49,3 +49,10 @@ select form which you want to edit
 select 'publication' tab
 press 'Start publication' button
 verify that your form have been published
+
+
+
+estimates:
+test cases creation: 2hr
+autotests creation: 4hr
+total: 6 hr
